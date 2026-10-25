@@ -1,2 +1,2 @@
-param arch="GATECH 2882 8383 9 63554; GAWEAP 9393 3939 64844"
+param arch="--GATECH 2882 8383 9 63554; --GAWEAP 9393 3939 64844"
 fmt team="Taskid=${taskid}; AiScript=${aiscript}; Sucide=${sucide:yes}"

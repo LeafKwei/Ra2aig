@@ -1,0 +1,26 @@
+//配置项
+//如果是param，则key存储参数名，values存储参数值
+//如果是fmt，则key为空，values存储参数值
+class STPEField
+{
+	string key;
+	List<string> values;
+}
+
+//配置行
+class STPERow
+{
+	string label; //类型标签
+	string name; //行名
+	List<STPEFiled> fields; //配置项列表
+
+	GetFieldAt(int index); //获取指定索引位置的配置项
+	GetFieldNamed(string name); //获取指定名称的配置项
+	GetFieldList(); //获取所有配置项的列表			
+}
+
+//配置文件
+class STPEFile
+{
+	List<STPERow> rows; //配置行列表
+}
