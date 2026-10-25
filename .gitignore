@@ -1,0 +1,147 @@
+# =========================
+# 构建产物
+# =========================
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+[Ee]xported/
+artifacts/
+publish/
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.cache
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.bak
+*.gho
+*.ori
+*.orig
+*.pyc
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# =========================
+# Visual Studio
+# =========================
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.rsuser
+*.ncb
+*.aps
+*.VC.db
+*.VC.VC.opendb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+ipch/
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# =========================
+# Rider / JetBrains
+# =========================
+.idea/
+*.sln.iml
+*.DotSettings
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# =========================
+# NuGet
+# =========================
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+packages/
+.nuget/
+
+# =========================
+# .NET / 工具缓存
+# =========================
+*.ncb
+*.sdf
+*.svclog
+.artifacts/
+msbuild.log
+msbuild.err
+msbuild.wrn
+*.binlog
+
+# =========================
+# 测试
+# =========================
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+TestResults/
+coverage*/
+*.coverage
+*.coveragexml
+*.coverage.*
+coverlet/
+
+# =========================
+# ASP.NET / 发布
+# =========================
+*.Publish.xml
+*.pubxml
+*.publishproj
+_UpgradeReport_Files/
+publish/
+PublishScripts/
+app.publish/
+
+# =========================
+# 用户/环境相关
+# =========================
+*.env
+.env.*
+!.env.example
+appsettings.Development.local.json
+*.local.json
+launchSettings.json
