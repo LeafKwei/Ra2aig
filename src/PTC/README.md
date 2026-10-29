@@ -5,13 +5,13 @@ PTC(Pure Text Configuration，纯文本配置)是一种语法与`*.ini`文件高
 ```ini
 Value1 with key.
 Value2 with key.
-IamKey = IamValue ///I am description.
+IamKey = IamValue ///I am a description.
 IamKey2 =   ///Will get an empty string as the value.
 
 [UserInfo]
 name = Cissia
 job = police
-address = "new eridu"
+address = new eridu
 
 [Local]
 language = zh_cn
@@ -23,7 +23,7 @@ language = zh_cn
 [UserInfo]
 name = Cissia
 job = police
-address = "new eridu"
+address = new eridu
 ```
 
 `[UserInfo]`被称为段头部(Segment head)，`UserInfo`为段名。`name = Cissia`被称为配置对(`Pair`)，其中`name`是键，`Cissia`是值，PTC会自动裁剪掉键和值开头和末尾的空格。
@@ -32,7 +32,7 @@ address = "new eridu"
 
 PTC支持无头配置，即在文件最开始，可以允许在不声明段头的情况下直接编写配置对，这些配置对将会被PTC解析器解析到一个单独的无头`PairSegment`中。除此之外，PTC还支持无键配置，即可以直接编写值而无需给出对应的键，例如本例的`Value1 with key.`，这些值同样会被解析到一个`Pair`中，但它们的键是空的。
 
-PTC允许使用单引号`'`或双引号`"`显式地标记出值的范围，例如本例中的`"new eridu"`。
+此外，在PTC文件中，连续的三条斜杠之后代表注释内容，例如本例中的`///I am a description.`。
 
 
 
